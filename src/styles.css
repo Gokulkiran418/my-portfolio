@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #F3F4F6;
+}
+body.dark {
+  background-color: #1A202C;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(180deg, white, grey, white);
+  background-size: 100% 200%;
+  animation: vertical-gradient-animation 3s ease infinite;
+  padding: 0 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+body.dark .navigation {
+  background: linear-gradient(180deg, #314363, black, #314363);
+  background-size: 100% 200%;
+  animation: vertical-gradient-animation 3s ease infinite;
+}
+.main-content {
+  margin-top: 60px;
+  margin-left: 30px;
+  padding: 20px;
+}
+.decorative-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100vh;
+  background: linear-gradient(180deg, white, grey, white);
+  background-size: 100% 200%;
+  animation: vertical-gradient-animation 3s ease infinite;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, width 0.3s ease;
+  z-index: 10;
+}
+body.dark .decorative-sidebar {
+  background: linear-gradient(180deg, #314363, black, #314363);
+  background-size: 100% 200%;
+  animation: vertical-gradient-animation 3s ease infinite;
+}
+.decorative-sidebar:hover {
+  opacity: 1;
+  width: 45px;
+}
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.content-box {
+  background: linear-gradient(300deg, white, white, grey);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body.dark .content-box {
+  background: linear-gradient(300deg, #314363, #314363, black);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+}
+.gradient-background {
+  background: linear-gradient(300deg, white, white, grey);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+}
+body.dark .gradient-background {
+  background: linear-gradient(300deg, #314363, #314363, black);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes vertical-gradient-animation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+.animate-on-appear {
+  animation: appear 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .navigation {
+    height: auto;
+    padding: 10px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .navigation ul {
+    font-size: 0.9rem;
+  }
+  .main-content {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+  .decorative-sidebar {
+    display: none;
+  }
+}
