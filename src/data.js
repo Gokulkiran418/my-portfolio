@@ -38,6 +38,15 @@ export const data = {
           video:"/images/imagepredict.mp4"
         },
          {
+          title: "Serverless Blog",
+          description: "A serverless blog platform built with Next.js and Tailwind CSS. Utilizes React's useEffect and useState hooks to dynamically update posts without page reloads.",
+          technologies: ["Next.js", "React","Tailwind CSS"],
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/serverless-blog.git",
+          image:"",
+          video:"/images/blog.mp4"
+        },
+         {
           title: "Weather Web App (Website link available below)",
           description: "A web app displaying real-time weather data using the OpenWeatherMap API, with responsive UI and search history. Background is a gradient color animation that changes with temperature.",
           technologies: ["Bootstrap", "OpenWeatherMap API", "JavaScript"],
