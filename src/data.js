@@ -3,6 +3,15 @@ export const data = {
     // Each project should have title, description, technologies (array), link, githublink, and image.
     projects: [
         {
+          title: "Caption Generator(OpenAI Whisper and AWS)",
+          description: "A serverless video captioning application that automatically transcribes uploaded videos using OpenAI's Whisper API, leveraging AWS Lambda and S3 for processing and storage. Built with Next.js for a seamless frontend with video preview and user can download transcription.",
+          technologies: ["Next.js","AWS(S3, Lambda)","OpenAI API Whisper","Python"],      
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/caption-generator.git",
+          video:"/images/caption.mp4" 
+
+        },
+        {
           title: "E-Shop Platform For Shoes (Website link available below) ",
           description: "A full-stack SPA e-commerce app for shoes with cart and checkout functionality, it supports dynamic routing, async operations, and responsive UI. Deployed on Vercel ",
           technologies: ["React","React Router(SPAs)","Vite","Tailwind CSS","Node.js","Express","Neon PostgreSQL","Vercel"],      
@@ -12,6 +21,15 @@ export const data = {
 
         },
          {
+          title: "Heart Disease Predictor",
+          description: "A Django-based web app using a RandomForestClassifier to predict heart disease risk from 13 health metrics. Features a responsive Bootstrap 5 interface. Showcases my full-stack and machine learning expertise.",
+          technologies: ["Python","Django","scikit-learn","pandas","Bootstrap 5", "HTML/CSS"],
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/Heart-Disease-Predictor.git",
+          image:"",
+          video:"/images/hdpredict1.mp4"
+        },
+         {
           title: "Chatbot about me (Website link available below)",
           description: "Built with Next.js and Dialogflow and google cloud, it features a responsive UI styled with Tailwind CSS. Deployed on Vercel, it showcases full-stack development and NLP integration.",
           technologies: ["React","Next.js", "Dialogflow", "Tailwind CSS", "Node.js"],
@@ -19,15 +37,7 @@ export const data = {
           githublink:"https://github.com/Gokulkiran418/my-chatbot-app.git",
           image:"/images/aboutmebot.png"
         },
-        {
-          title: "Heart Disease Predictor",
-          description: "A Django-based web app using a RandomForestClassifier to predict heart disease risk from 13 health metrics. Features a responsive Bootstrap 5 interface. Showcases my full-stack and machine learning expertise.",
-          technologies: ["Python","Django","scikit-learn","pandas","Bootstrap 5", "HTML/CSS"],
-          link:"",
-          githublink:"https://github.com/Gokulkiran418/Heart-Disease-Predictor.git",
-          image:"",
-          video:"/images/hdpredict.mp4"
-        },
+       
          {
           title: "Image Recognition Webapp",
           description: "A full-stack image recognition web app that lets users detect objects in images using either a client-side TensorFlow.js model or a server-side Flask API with TensorFlow and MobileNet.",
