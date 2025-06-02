@@ -12,7 +12,7 @@ export function Hero() {
         <p className="mt-4 max-w-md mx-auto text-gray-600 dark:text-gray-400">Passionate about Building Innovative Web and AI Solutions</p>
         <div className="mt-6 space-x-4">
           <a href="#contact" className="inline-block bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200">Contact Me</a>
-          <a href="/images/gokulkiran_resume.pdf" target="_blank" className="inline-block bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200">Resume</a>
+          <a href="/images/GokulResume.pdf" target="_blank" className="inline-block bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200">Resume</a>
         </div>
       </div>
     </section>
