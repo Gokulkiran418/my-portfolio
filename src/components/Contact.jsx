@@ -68,16 +68,16 @@ export function Contact() {
         </p>
         <form onSubmit={handleSubmit} className="mt-6 space-y-4 animate-slide-up">
           <div>
-            <label htmlFor="name" className="block text-gray-700 dark:text-gray-300">Subject</label>
-            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full p-2 mt-1 border rounded dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200" placeholder="Subject" />
+            <label htmlFor="name" className="block text-gray-700 dark:text-gray-300">Your Good Name</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full p-2 mt-1 border rounded dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200" placeholder="Enter Your Good Name" />
           </div>
           <div>
             <label htmlFor="email" className="block text-gray-700 dark:text-gray-300">Your Email</label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full p-2 mt-1 border rounded dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200" placeholder="Your Email" />
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full p-2 mt-1 border rounded dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200" placeholder="Enter Your Email" />
           </div>
           <div>
             <label htmlFor="message" className="block text-gray-700 dark:text-gray-300">Speak Your Heart</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows="4" className="w-full p-2 mt-1 border rounded dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200" placeholder="Your Message"></textarea>
+            <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows="4" className="w-full p-2 mt-1 border rounded dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200" placeholder="Enter Your Message"></textarea>
           </div>
           <button
                 type="submit"
