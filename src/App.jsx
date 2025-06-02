@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
@@ -9,7 +10,7 @@ import { Links } from './components/Links';
 import { Contact } from './components/Contact';
 
 function App() {
-  const [isDark, setIsDark] = React.useState(true);
+  const [isDark, setIsDark] = React.useState(true); // Changed to true for default dark mode
   const [showBackToTop, setShowBackToTop] = React.useState(false);
 
   React.useEffect(() => {
@@ -22,14 +23,17 @@ function App() {
 
   React.useEffect(() => {
     const sections = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-        else entry.target.classList.remove('visible');
-      });
-    }, { threshold: 0.1 });
-    sections.forEach(section => observer.observe(section));
-    return () => sections.forEach(section => observer.unobserve(section));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+          else entry.target.classList.remove('visible');
+        });
+      },
+      { threshold: 0.1 }
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
   React.useEffect(() => {
@@ -58,7 +62,10 @@ function App() {
           <p>© 2025 Gokul Kiran. All rights reserved.</p>
         </footer>
         {showBackToTop && (
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-200">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-200"
+          >
             <i className="fas fa-arrow-up"></i>
           </button>
         )}
@@ -67,4 +74,4 @@ function App() {
   );
 }
 
-export default App; // Change from named export to default export
+export default App;

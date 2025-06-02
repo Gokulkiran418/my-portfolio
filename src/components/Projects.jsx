@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { data } from '../data';
 import { ProjectCard } from './ProjectCard';
 
 export function Projects() {
-  const [showAll, setShowAll] = React.useState(false);
+  const [showAll, setShowAll] = useState(false);
+  const [shouldScroll, setShouldScroll] = useState(false); // New state to track scroll trigger
   const visibleProjects = showAll ? data.projects : data.projects.slice(0, 4);
+
+  useEffect(() => {
+    if (shouldScroll && !showAll) {
+      const skillsSection = document.getElementById('skills');
+      if (skillsSection) {
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+      } else {
+      }
+    }
+  }, [showAll, shouldScroll]);
+
+  const handleButtonClick = () => {
+    if (showAll) {
+      setShowAll(false);
+      setShouldScroll(true); // Trigger scroll only when "Show Less" is clicked
+    } else {
+
+      setShowAll(true);
+      setShouldScroll(false); // No scroll needed for "Show More"
+    }
+  };
 
   return (
     <section id="projects" className="py-12">
@@ -17,7 +39,7 @@ export function Projects() {
       {data.projects.length > 4 && (
         <div className="mt-6 text-center">
           <button
-            onClick={() => setShowAll(!showAll)}
+            onClick={handleButtonClick}
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200"
           >
             {showAll ? 'Show Less' : 'Show More'}

@@ -86,12 +86,15 @@ export const data = {
     // Skills: Add or remove skill categories and items.
     // Each category has a name and an array of skills.
     skills: [
-      { category: "Programming Languages", items: ["Python", "JavaScript"] },
-      { category: "Database", items: ["MySQL", "PostgreSQL"] },
-      { category: "Front-end", items: ["React", "HTML", "CSS", "JavaScript", "Bootstrap"] },
-      { category: "Back-end", items: ["Node.js", "Express.js", "GraphQL", "Flask"] },
-      { category: "Machine Learning", items: ["Tensorflow", "PyTorch", "Pandas", "NumPy", "Matplotlib", "Seaborn"] },
-      { category: "Tools", items: ["Git", "GitHub Copilot", "ChatGPT","Vercel","Neon PostgreSQL","Postman"] }
+      { category: "Programming Languages", items: ["Python", "JavaScript","TypeScript"] },
+      { category: "AI Tools", items: ["Cursor", "Windsurf","ChatGPT","OpenAI API"] },
+      { category: "Front-end", items: ["React","Vite","Next.js","Tailwind CSS","HTML", "CSS", "JavaScript", "Bootstrap"] },
+      { category: "Back-end", items: ["Node.js", "Express.js", "GraphQL", "Flask","Django","REST APIs"] },
+      { category: "AWS and Cloud", items: ["Lambda Functions","S3","EC2","IAM","Vercel"] },
+      { category: "Database", items: ["MySQL","Neon PostgreSQL"] },
+      { category: "Version Control", items: ["Git","GitHub"] },
+      { category: "Artificial Intelligence & Machine Learning", items: ["Tensorflow.js", "scikit-learn","DialogFlow"] },
+      { category: "Data Tools", items: ["Pandas", "NumPy", "Matplotlib", "Jupyter Notebook"] },
       // To add a new category, copy an object above and update category and items.
       // To remove a category, delete the corresponding object.
       // To add/remove skills, edit the items array.

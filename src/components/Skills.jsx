@@ -1,8 +1,7 @@
-import React from "react";
+import React, { forwardRef } from 'react';
 import { data } from '../data';
-export function Skills() {
-  return (
-    <section id="skills" className="py-12 fade-in">
+export const Skills = forwardRef((props, ref) => (
+  <section id="skills" ref={ref} className="py-12 fade-in">
       <h2 className="text-3xl font-bold mb-6 text-blue-600 dark:text-blue-400">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {data.skills.map((skillGroup, index) => (
@@ -22,5 +21,4 @@ export function Skills() {
         ))}
       </div>
     </section>
-  );
-}
+));
