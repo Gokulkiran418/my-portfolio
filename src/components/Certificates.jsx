@@ -9,7 +9,7 @@ export function Certificates() {
           {data.certificates.map((cert, index) => (
             <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center">
               <i className="fas fa-certificate mr-2 text-blue-500 dark:text-blue-300"></i>
-              {cert.name} - {cert.issuer} ({cert.date})
+              {cert.name} - {cert.issuer} 
             </li>
           ))}
         </ul>

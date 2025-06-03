@@ -101,9 +101,12 @@ export const data = {
     ],
     // Certificates: Add or remove certificate objects.
     certificates: [
-      { name: "Full Stack Web Development Bootcamp; Author: Angela Yu", issuer: "Udemy", date: "2025" },
-      { name: "100 Days of Code: Complete Python Bootcamp", issuer: "Udemy", date: "2024" },
-      { name: "OpenAI GPTs: Creating Custom AI Assistants", issuer: "Coursera", date: "2024" }
+      { name: "Full Stack Web Development Bootcamp; Author: Angela Yu", issuer: "Udemy"},
+      { name: "Vibe-Coding: AI Driven Software Development and Testing", issuer: "Udemy"},
+      { name: "AWS: Deploy Web Apps on the Cloud", issuer: "Udemy"},
+      { name: "100 Days of Code: Complete Python Bootcamp", issuer: "Udemy"},
+      { name: "OpenAI GPTs: Creating Custom AI Assistants", issuer: "Coursera" }
+      
       // To add a new certificate, copy an object above and update the fields.
       // To remove a certificate, delete the corresponding object.
     ],
