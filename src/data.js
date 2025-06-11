@@ -48,6 +48,15 @@ export const data = {
           video:"/images/imagepredict.mp4"
         },
          {
+          title: "AI Document Generator",
+          description: "AI-Powered Django web application that automates documentation for public GitHub repositories or user-pasted code. It leverages OpenAI gpt-3.5-turbo-instruct and GitHub API",
+          technologies: ["Python","Django", "OpenAI API","GitHub API","asttokens","Chunking","Regex Parsing"],
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/AI-document-generator.git",
+          image:"",
+          video:"/images/AIDocGen.mp4"
+        },
+         {
           title: "Serverless Blog",
           description: "A serverless blog platform built with Next.js and Tailwind CSS. Utilizes React's useEffect and useState hooks to dynamically update posts without page reloads.",
           technologies: ["Next.js", "React","Tailwind CSS"],
