@@ -17,6 +17,15 @@ export function Links() {
       </p>
       <p className="text-gray-600 dark:text-gray-400 flex flex-col md:flex-row items-center md:items-start text-center md:text-left break-words">
       <span className="flex items-center">
+        <i className="fas fa-brain mr-2 text-purple-500 dark:text-purple-300"></i>
+        RAG Web App:
+      </span>
+        <a href={data.links.RAGApp} target="_blank" className="text-blue-500 hover:underline ml-1 break-all">
+          {data.links.github}
+        </a>
+      </p>
+      <p className="text-gray-600 dark:text-gray-400 flex flex-col md:flex-row items-center md:items-start text-center md:text-left break-words">
+      <span className="flex items-center">
         <i className="fas fa-robot mr-2 text-blue-500 dark:text-blue-300"></i>
        Chatbot About Me:
       </span>
