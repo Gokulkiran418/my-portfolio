@@ -3,6 +3,15 @@ export const data = {
     // Each project should have title, description, technologies (array), link, githublink, and image.
     projects: [
         {
+          title: "RAG AI Knowledge Base(Website link available below)",
+          description: "A full-stack RAG (Retrieval-Augmented Generation) knowledge base app where users upload PDFs or text files to query document content using AI. It extracts text, generates embeddings, stores them in Pinecone, and returns context-aware answers using OpenAI gpt-4o. Built with a modern UI, real-time processing.",
+          technologies: ["TypeScript","Next.js","OpenAI gpt-4o","Pinecone","Tailwind CSS","GSAP","Neon PostgreSQL","pdf-parse","Vercel"],      
+          link:"https://ragdocument.vercel.app/",
+          githublink:"https://github.com/Gokulkiran418/rag-document-retrieval.git",
+          image:"/images/ragdoc.png" 
+
+        },
+        {
           title: "Caption Generator(OpenAI Whisper and AWS)",
           description: "A serverless video captioning application that automatically transcribes uploaded videos using OpenAI's Whisper API, leveraging AWS Lambda and S3 for processing and storage. Built with Next.js for a seamless frontend with video preview and user can download transcription.",
           technologies: ["Next.js","AWS(S3, Lambda)","OpenAI API Whisper","Python"],      
@@ -88,9 +97,10 @@ export const data = {
     // Links: Update your personal links here.
     links: {
       github: "https://github.com/Gokulkiran418",
-       chatbot: "https://aboutmechatbot.vercel.app/",
-       weatherapp: "https://weatherwebapp21.vercel.app/",
-       ecommerce:"https://eshopplatform.vercel.app/"
+      RAGApp: "https://ragdocument.vercel.app/",
+      chatbot: "https://aboutmechatbot.vercel.app/",
+      weatherapp: "https://weatherwebapp21.vercel.app/",
+      ecommerce:"https://eshopplatform.vercel.app/",
     },
     // Skills: Add or remove skill categories and items.
     // Each category has a name and an array of skills.
