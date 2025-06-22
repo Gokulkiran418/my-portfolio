@@ -46,6 +46,14 @@ export const data = {
           githublink:"https://github.com/Gokulkiran418/my-chatbot-app.git",
           image:"/images/aboutmebot.png"
         },
+         {
+          title: "An Instagram-Style React Native Video App",
+          description: "React Native App with vertically scrollable short video platform built with React Native. It supports auto-play, mute/unmute, like animations, user follow actions, and fullscreen playback. Unit tests for core components.",
+          technologies: ["React Native","React Hooks", "React Native Gesture Handler", "Expo CLI", "Jest"],
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/reels-react-native.git",
+          video: "/images/nativeapp.mp4"
+        },
        
          {
           title: "Image Recognition Webapp",
@@ -107,12 +115,12 @@ export const data = {
     skills: [
       { category: "Programming Languages", items: ["Python", "JavaScript","TypeScript"] },
       { category: "AI Tools", items: ["Cursor", "Windsurf","ChatGPT","OpenAI API"] },
-      { category: "Front-end", items: ["React","Vite","Next.js","Tailwind CSS","HTML", "CSS", "JavaScript", "Bootstrap"] },
+      { category: "Front-end", items: ["React","Vite","Next.js","Tailwind CSS","HTML", "CSS", "JavaScript", "GSAP Animations"] },
       { category: "Back-end", items: ["Node.js", "Express.js", "GraphQL", "Flask","Django","REST APIs"] },
-      { category: "AWS and Cloud", items: ["Lambda Functions","S3","EC2","IAM","Vercel"] },
-      { category: "Database", items: ["MySQL","Neon PostgreSQL"] },
+      { category: "DevOps", items: ["AWS","Lambda Functions","S3","EC2","IAM","CI/CD","Docker","Vercel"] },
+      { category: "Database", items: ["MySQL","PostgreSQL","Pinecone"] },
       { category: "Version Control", items: ["Git","GitHub"] },
-      { category: "Artificial Intelligence & Machine Learning", items: ["Tensorflow.js", "scikit-learn","DialogFlow"] },
+      { category: "Artificial Intelligence & Machine Learning", items: ["RAG Pipeline","Tensorflow.js", "scikit-learn","DialogFlow"] },
       { category: "Data Tools", items: ["Pandas", "NumPy", "Matplotlib", "Jupyter Notebook"] },
       // To add a new category, copy an object above and update category and items.
       // To remove a category, delete the corresponding object.
