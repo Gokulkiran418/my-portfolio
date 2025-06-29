@@ -18,10 +18,19 @@ export function Links() {
       <p className="text-gray-600 dark:text-gray-400 flex flex-col md:flex-row items-center md:items-start text-center md:text-left break-words">
       <span className="flex items-center">
         <i className="fas fa-brain mr-2 text-blue-500 dark:text-blue-300"></i>
-        RAG Web App:
+        RAG Website:
       </span>
         <a href={data.links.RAGApp} target="_blank" className="text-blue-500 hover:underline ml-1 break-all">
           {data.links.RAGApp}
+        </a>
+      </p>
+      <p className="text-gray-600 dark:text-gray-400 flex flex-col md:flex-row items-center md:items-start text-center md:text-left break-words">
+      <span className="flex items-center">
+        <i className="fas fa-newspaper text-blue-500 dark:text-blue-300 mr-2"></i>
+        News Website
+      </span>
+        <a href={data.links.newsapp} target="_blank" className="text-blue-500 hover:underline ml-1 break-all">
+          {data.links.newsapp}
         </a>
       </p>
       <p className="text-gray-600 dark:text-gray-400 flex flex-col md:flex-row items-center md:items-start text-center md:text-left break-words">

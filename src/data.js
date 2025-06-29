@@ -12,6 +12,15 @@ export const data = {
 
         },
         {
+          title: "News App with AI-Summary",
+          description: "Next app that displays the latest news and search articles from the newsdata.io API, allows users to view detailed article pages with AI-generated summaries, keywords using OpenAI's gpt-4o and display estimated read time of the article.",
+          technologies: ["TypeScript","Next.js","OpenAI gpt-4o","React memo","getserversideprops","newsdata.io","Framer-motion","Vercel"],      
+          link:"https://summaryofnews.vercel.app",
+          githublink:"https://github.com/Gokulkiran418/news-dashboard-ai.git",
+          image:"/images/newsapp.png" 
+
+        },
+        {
           title: "Caption Generator(OpenAI Whisper and AWS)",
           description: "A serverless video captioning application that automatically transcribes uploaded videos using OpenAI's Whisper API, leveraging AWS Lambda and S3 for processing and storage. Built with Next.js for a seamless frontend with video preview and user can download transcription.",
           technologies: ["Next.js","AWS(S3, Lambda)","OpenAI API Whisper","Python"],      
@@ -109,6 +118,7 @@ export const data = {
       chatbot: "https://aboutmechatbot.vercel.app/",
       weatherapp: "https://weatherwebapp21.vercel.app/",
       ecommerce:"https://eshopplatform.vercel.app/",
+      newsapp:"https://summaryofnews.vercel.app",
     },
     // Skills: Add or remove skill categories and items.
     // Each category has a name and an array of skills.
