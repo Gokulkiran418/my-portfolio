@@ -31,8 +31,8 @@ export const data = {
         },
         {
           title: "E-Shop Platform For Shoes (Website link available below) ",
-          description: "A full-stack SPA e-commerce app for shoes with cart and checkout functionality, it supports dynamic routing, async operations, and responsive UI. Deployed on Vercel ",
-          technologies: ["React","React Router(SPAs)","Vite","Tailwind CSS","Node.js","Express","Neon PostgreSQL","Vercel"],      
+          description: "Developed E-Shop, a futuristic e-commerce platform for premium footwear, featuring a neon-themed UI/UX with Anime.js animations and Stripe payment integration. Utilized Vite for fast builds and Neon PostgreSQL for scalable product data management. Delivered a responsive, user-friendly experience.",
+          technologies: ["Vite","Animejs","Tailwind CSS","Node.js","Stripe","Neon PostgreSQL","Vercel"],      
           link:"https://eshopplatform.vercel.app/",
           githublink:"https://github.com/Gokulkiran418/E-Commerce-Vite",
           image:"/images/eshopshoe.png" 
