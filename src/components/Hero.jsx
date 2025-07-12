@@ -24,7 +24,7 @@ export function Hero() {
       </p>
         <div className="mt-6 space-x-4">
           <a href="#contact" className="inline-block bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200">Contact Me</a>
-          <a href="/images/Gokul_RESUME.pdf" target="_blank" className="inline-block bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200">Resume</a>
+          <a href="/images/Gokul_Kiran.pdf" target="_blank" className="inline-block bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200">Resume</a>
         </div>
       </div>
     </section>
