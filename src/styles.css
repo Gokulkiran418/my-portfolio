@@ -11,6 +11,7 @@ body {
 body.dark {
   background-color: #1A202C;
 }
+/* Navigation styles */
 .navigation {
   position: fixed;
   top: 0;
@@ -30,6 +31,66 @@ body.dark .navigation {
   background-size: 100% 200%;
   animation: vertical-gradient-animation 3s ease infinite;
 }
+
+/* Menu icon animation */
+.menu-icon {
+  transition: transform 0.3s ease;
+}
+.menu-icon svg {
+  transition: opacity 0.3s ease;
+}
+.menu-icon.active {
+  transform: rotate(90deg);
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .navigation > div:first-child {
+    width: 100%;
+  }
+  .navigation ul.mobile-menu {
+    width: 100%;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    border-radius: 0; /* Remove box effect */
+    box-shadow: none; /* Remove box effect */
+    background: inherit; /* Inherit navbar's gradient */
+  }
+  .navigation ul.mobile-menu.open {
+    max-height: 400px; /* Adjust based on menu height */
+  }
+  .navigation ul.mobile-menu li {
+    padding: 8px 0;
+  }
+  .mobile-menu-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.3s ease forwards;
+  }
+  .mobile-menu-item:nth-child(1) { animation-delay: 0.1s; }
+  .mobile-menu-item:nth-child(2) { animation-delay: 0.2s; }
+  .mobile-menu-item:nth-child(3) { animation-delay: 0.3s; }
+  .mobile-menu-item:nth-child(4) { animation-delay: 0.4s; }
+  .mobile-menu-item:nth-child(5) { animation-delay: 0.5s; }
+  .mobile-menu-item:nth-child(6) { animation-delay: 0.6s; }
+  .mobile-menu-item:nth-child(7) { animation-delay: 0.7s; }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .main-content {
   margin-top: 60px;
   margin-left: 30px;
@@ -113,15 +174,6 @@ body.dark .gradient-background {
   animation: appear 0.5s ease-in-out;
 }
 @media (max-width: 768px) {
-  .navigation {
-    height: auto;
-    padding: 10px 10px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  .navigation ul {
-    font-size: 0.9rem;
-  }
   .main-content {
     margin-top: 60px;
     margin-left: 0;
