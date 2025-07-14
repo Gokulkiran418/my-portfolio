@@ -48,14 +48,6 @@ export const data = {
           video:"/images/hdpredict1.mp4"
         },
          {
-          title: "Chatbot about me (Website link available below)",
-          description: "Built with Next.js and Dialogflow and google cloud, it features a responsive UI styled with Tailwind CSS. Deployed on Vercel, it showcases full-stack development and NLP integration.",
-          technologies: ["React","Next.js", "Dialogflow", "Tailwind CSS", "Node.js"],
-          link:"https://aboutmechatbot.vercel.app",
-          githublink:"https://github.com/Gokulkiran418/my-chatbot-app.git",
-          image:"/images/aboutmebot.png"
-        },
-         {
           title: "An Instagram-Style React Native Video App",
           description: "React Native App with vertically scrollable short video platform built with React Native. It supports auto-play, mute/unmute, like animations, user follow actions, and fullscreen playback. Unit tests for core components.",
           technologies: ["React Native","React Hooks", "React Native Gesture Handler", "Expo CLI", "Jest"],
@@ -115,7 +107,6 @@ export const data = {
     links: {
       github: "https://github.com/Gokulkiran418",
       RAGApp: "https://ragdocument.vercel.app/",
-      chatbot: "https://aboutmechatbot.vercel.app/",
       weatherapp: "https://weatherwebapp21.vercel.app/",
       ecommerce:"https://eshopplatform.vercel.app/",
       newsapp:"https://summaryofnews.vercel.app",
