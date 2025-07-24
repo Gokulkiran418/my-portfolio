@@ -12,6 +12,15 @@ export const data = {
 
         },
         {
+          title: "AI Agents-Powered Disaster Response Chatbot",
+          description: "An intelligent disaster response chatbot powered by multiple AI agents. Built with a full-stack architecture using FastAPI, CrewAI, and React, enabling real-time, agent-driven task coordination. Each query activates planner, executor, and researcher agents to collaboratively solve complex disaster scenarios.",
+          technologies: ["FastAPI","CrewAI","OpenAI gpt-4o","Python","React.js", "Tailwind CSS"],      
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/disaster-management-chatbot.git",
+          video:"/images/multiagents.mp4" 
+
+        },
+        {
           title: "News App with AI-Summary",
           description: "Next app that displays the latest news and search articles from the newsdata.io API, allows users to view detailed article pages with AI-generated summaries, keywords using OpenAI's gpt-4o and display estimated read time of the article.",
           technologies: ["TypeScript","Next.js","OpenAI gpt-4o","React memo","getserversideprops","newsdata.io","Framer-motion","Vercel"],      
@@ -27,6 +36,15 @@ export const data = {
           link:"",
           githublink:"https://github.com/Gokulkiran418/caption-generator.git",
           video:"/images/caption.mp4" 
+
+        },
+        {
+          title: "PII Protection with AWS and Tesseract",
+          description: "A backend-focused PII Masking API built with Python and FastAPI, utilizing AWS Textract and Tesseract for multilingual OCR to detect Personally Identifiable Information (PII) like names, Aadhaar numbers, DOB from documents an masks them using OpenCV. Utilized Reactbits for cool frontend.",
+          technologies: ["FastAPI","Python","AWS Textract","Tesseract","Reactbits"],      
+          link:"",
+          githublink:"https://github.com/Gokulkiran418/aws-textract-mask-pii.git",
+          video:"/images/pii.mp4" 
 
         },
         {
@@ -91,15 +109,6 @@ export const data = {
           githublink:"https://github.com/Gokulkiran418/WeatherApp.git",
           image:"/images/Weatherapp.png"       
         },
-
-        {
-          title: "Task Manager",
-          description: "A simple task manager that is a to-do list web application that allows users to add, toggle, and delete tasks with a responsive design. Built with JavaScript, it features task persistence using localStorage.",
-          technologies: ["JavaScript", "HTML", "CSS", "Flexbox","Grid Layout"],
-          image:"/images/taskmanager.png",
-          link:"",
-          githublink:"https://github.com/Gokulkiran418/TaskManagerApp.git" 
-        }
       // To add a new project, copy an object above and update the fields.
       // To remove a project, delete the corresponding object.
     ],
